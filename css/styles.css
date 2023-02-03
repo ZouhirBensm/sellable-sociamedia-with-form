@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=BenchNine:wght@300&display=swap');
+
+
+:root {
+  --fs-XXlarge: 4rem;
+  --fs-Xlarge: 2.25rem;
+  --fs-large: 2rem;
+  --fs-medium: 1.5rem;
+  --fs-small: 1rem;
+  --fs-xsmall: .8rem; 
+}
+
+i {
+  font-size: var(--fs-XXlarge);
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  min-width: 300px;
+  width: 100%;
+  font-size: 1em;
+  scroll-behavior: smooth;
+}
+
+.parallax {
+  /* Full height */
+  height: 100%; 
+  width: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax.freedom {
+  /* The image used */
+  background-image: url('../img/banners_icons/egbanner2.png');
+}
+
+.parallax.bird {
+  /* The image used */
+  background-image: url('../img/banners_icons/egbanner1.png');
+}
+
+/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+/* @media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+} */
+
+div.middle-box {
+  height: 100vh;
+  background-color: white;
+}
+
+div.middle-box > div > h2{
+  font-size: var(--fs-XXlarge);
+  /* margin: 20px; */
+}
+
+.Twitter > a > i{
+  color: #1DA1F2
+}
+
+.Instagram > a > i {
+  color: #c722d9
+}
+
+.Tiktok > a > i {
+  color: #5706a2
+}
+
+.Email > a > i {
+  color: black;
+}
+
+.down-drop {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  
+}
+
+.down-drop > p {
+  color: rgb(255, 255, 255);
+  /* border: 2px solid white; */
+  font-family: 'BenchNine', sans-serif;
+  font-size: 4vh;
+}
+
+i.fa-circle-chevron-down {
+  color: rgba(255, 255, 255, 0.528);
+  font-size: 15vh;
+  margin: 10px;
+}
+
+i.fa-circle-chevron-down:hover {
+  color: rgba(71, 39, 251, 0.814);
+}
+
+/* .fa-circle-chevron-down {
+  color: rgba(255, 255, 255, 0.528);
+  font-size: 10vw;
+  position: absolute;
+  bottom: 0;
+  left: 45%;
+}  */

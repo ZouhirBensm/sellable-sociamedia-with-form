@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+
+:root {
+  --fs-XXlarge: 4rem;
+  --fs-Xlarge: 2.25rem;
+  --fs-large: 2rem;
+  --fs-medium: 1.5rem;
+  --fs-small: 1rem;
+  --fs-xsmall: .8rem; 
+}
+
+/* input:invalid {
+  border: red solid 3px;
+} */
+
+.format {
+  font-size: small;
+}
+
+
+.master-form-container{
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: -40vh;
+  font-family: 'BenchNine', sans-serif;
+  border-radius: 20px;
+  /* align-items: stretch; */
+  background-color: rgba(0, 0, 0, 0.788);
+  color: white;
+  padding: 20px;
+  
+}
+
+.master-form-container > * {
+  width: 95%;
+  margin: 0 auto;
+  
+}
+
+h2.form-title {
+  /* margin: 0; */
+  font-family: 'BenchNine', sans-serif;
+}
+
+div.input-elements > div {
+  display: flex;
+  margin: 5px 0;
+  /* position: relative; */
+}
+
+div.input-elements > div > *{
+  /* border: 1px solid red; */
+  width: 50%;
+  flex-grow: 1;
+  min-width: 0;
+  max-width: 50%;
+}
+
+div.input-elements > div label[for="idphone2"] {
+  white-space: nowrap;
+}
+
+div.input-elements > div > label[for="idphone2"] > a {
+  overflow: scroll;
+}
+
+a {
+  text-decoration: none;
+  /* color: rgb(22, 38, 252); */
+  color: rgb(184, 184, 184);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+div.input-elements > div > input {
+  max-width: 50%;
+  /* position: absolute;
+  top: 5%;
+  bottom: 5%;
+  right: 0;
+  left: 0; */
+}
+
+label.idlabelemail {
+  text-decoration: none;
+}
+
+div.checkboxes > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  background-color: #3700ff7e;
+  border-radius: 10px;
+  margin: 2% 10%;
+  padding: 0 4px;
+}
+
+
+div.checkboxes > div:hover {
+  background-color: #000000;
+}
+
+div.checkboxes > div > *{
+  /* display: inline; */
+  
+}
+
+
+
+button[type="submit"] {
+  background: white;
+	color: grey;
+	border: 2px grey solid;
+	padding: 5px;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+  border-radius: 10px;
+  margin: 5px auto;
+  display: block;
+}
+
+button[type="submit"]:hover {
+  background: white;
+  color: rgb(43, 0, 255);
+  border: 2px rgb(17, 0, 255) solid;
+}
+
+form#form, p {
+  font-size: var(--fs-Xlarge);
+}
+
+i {
+  font-size: var(--fs-XXlarge);
+}
+
+
+/* input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  
+  border-radius: 100%;
+  background-color: white;
+} */
+@media only screen and (max-width: 375px) {
+  .master-form-container{
+    /* background-color: lightblue; */
+    width: 95%;
+  }
+  div.checkboxes > div {
+    margin: 2% 0;
+  }
+  :root {
+    --fs-XXlarge: 2.4rem;
+    --fs-Xlarge: 1.8rem;
+    --fs-large: 1.2rem;
+    --fs-medium: 0.9rem;
+    --fs-small: 0.8rem;
+    --fs-xsmall: 0.5rem; 
+  }
+}
+
+
+@media only screen and (min-width: 376px) and (max-width: 700px) {
+  .master-form-container{
+    /* background-color: lightgreen; */
+    width: 90%;
+  }
+  div.checkboxes > div {
+    margin: 2% 0;
+  }
+  :root {
+    --fs-XXlarge: 2.4rem;
+    --fs-Xlarge: 1.8rem;
+    --fs-large: 1.2rem;
+    --fs-medium: 0.9rem;
+    --fs-small: 0.8rem;
+    --fs-xsmall: 0.5rem; 
+  }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1024px) {
+  .master-form-container{
+    /* background-color: lightseagreen; */
+    width: 75%;
+    height: 100vh;
+    justify-content: space-evenly;
+  }
+  /* div.checkboxes > div {
+    margin: 0 0;
+  } */
+  :root {
+    --fs-XXlarge: 3rem;
+    --fs-Xlarge: 2rem;
+    --fs-large: 1.5rem;
+    --fs-medium: 1rem;
+    --fs-small: 0.8rem;
+    --fs-xsmall: 0.5rem; 
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+  .master-form-container{
+    /* background-color: lightyellow; */
+    width: 60%;
+    height: 100vh;
+    justify-content: space-evenly;
+  
+  }
+  :root {
+    --fs-XXlarge: 3rem;
+    --fs-Xlarge: 2rem;
+    --fs-large: 1.5rem;
+    --fs-medium: 1rem;
+    --fs-small: 0.8rem;
+    --fs-xsmall: 0.5rem; 
+  }
+}
+
+@media only screen and (min-width: 1280px) and (max-width: 1536px) {
+  .master-form-container{
+    /* background-color: lightpink; */
+    width: 50%;
+    height: 100vh;
+    justify-content: space-evenly;
+  }
+}
+
+@media only screen and (min-width: 1536px) and (max-width: 1920px) {
+  .master-form-container{
+    /* background-color: lightslategray; */
+    width: 40%;
+    height: 100vh;
+    justify-content: space-evenly;
+  
+  }
+}
+@media only screen and (min-width: 1920px) {
+  .master-form-container{
+    /* background-color: lightsalmon; */
+    width: 30%;
+    height: 100vh;
+    justify-content: space-evenly;
+  }
+
+}
+
